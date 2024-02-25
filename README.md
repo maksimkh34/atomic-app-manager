@@ -1,2 +1,13 @@
 # atomic-app-manager
-Atomic App Manager (AAM) - automatic app insaller from .mkt packages
+*Atomic App Manager (AAM) - Автоматический установщик приложений из .mkt пакетов 
+
+## Структура MTK пакета:
+Package.mkt
+┝━ Files
+│ ┕━ Файлы приложения (.exe)
+┝━ Exec
+│  ┝━ registry.rg - Файл с данными реестра для приложения (может отсутствовать)
+│  ┕━ update.exe - Исполняемый файл, применяющий какие-либо операции, требуемые после установки (может отсутствовать)
+┝━ Config
+│  ┝━ conf - Файл с информацией о пакете/программе
+│  ┕━ icon.ico - Иконка для отображения в меню
