@@ -7,17 +7,17 @@
         SizeToContent="WidthAndHeight"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        WindowStyle="None"
         Title="Выбор домашней директории"
-        Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Height="450" Width="800" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
     <Grid>
-        <StackPanel>
+        <StackPanel ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5">Выберите домашнюю директорию: </TextBlock>
-                <TextBox Margin="0,5,0,5" Width="270"></TextBox>
-                <Button Margin="5" Width="80">Обзор</Button>
+                <TextBox Margin="0,5,0,5" Width="270" Name="HomeDir_tb"></TextBox>
+                <Button Margin="5" Width="80" Click="SelectPath_b">Обзор</Button>
             </StackPanel>
-            <Button Width="190" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,5">Подтвердить</Button>
+            <Button Width="190" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,5"  Click="Accept_b">Подтвердить</Button>
         </StackPanel>
     </Grid>
 </Window>

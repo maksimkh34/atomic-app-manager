@@ -11,7 +11,7 @@ namespace atomic_app_manager
     public partial class App : Application
     {
         private void Application_Startup(object sender, StartupEventArgs e)
-        {
+         {
             if(!File.Exists("init"))
             {
                 AAM.InitRelease();
@@ -23,6 +23,8 @@ namespace atomic_app_manager
                 try
                 {
                     File.Delete(File.ReadLines("init").ElementAt(0));
+                    File.Delete("init");
+                    File.Create("init").Close();
                 }
                 catch (FileNotFoundException) { }
             }

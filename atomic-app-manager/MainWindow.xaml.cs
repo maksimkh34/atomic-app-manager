@@ -23,6 +23,7 @@ namespace atomic_app_manager
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
         }
     }
 }
